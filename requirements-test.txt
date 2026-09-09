@@ -1,0 +1,4 @@
+# Direct Mode + live Studionet test environment.
+# Direct Mode downloads and caches the pinned py-genlayer runner on first run.
+-r requirements.txt
+pytest>=8

@@ -1,0 +1,34 @@
+{
+  "mergezero_address": "0x1FC99a00650a98e0339346506760C5F10931BBAa",
+  "merge_id": 2,
+  "gate_address": "0x788Ab128cFddA3b742606d00D1E23f3fa4819831",
+  "workspace_hash": "9412871f9d680fba0b890b5ba9016120a11f7e2463451d37145368cd2bcdc4f9",
+  "merged_state_hash": "e8294265ef15dca31aed071b3a7d71e68ca8fbe170f5c9860a8cba5bff90f9fb",
+  "steps": [
+    {
+      "step": "deploy MergeZeroGate",
+      "tx_hash": "0x3f7f0cbb8b3eabef58ac3972be2895186e6191bf8fb1f8174b965a97e639351b",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE",
+      "address": "0x788Ab128cFddA3b742606d00D1E23f3fa4819831"
+    },
+    {
+      "step": "consume with wrong state hash (must be refused)",
+      "tx_hash": "0xfc6358afcca081ef6010cfdbeb8efc48397444ba9f580d495e7928cc51f24277",
+      "status": "FINALIZED",
+      "rejected": true
+    },
+    {
+      "step": "consume with correct pins",
+      "tx_hash": "0x002a992d1d40c41f67beef2401f0b9750d00ab205d73b864de973319391ae9e8",
+      "status": "FINALIZED",
+      "result": "MAJORITY_AGREE"
+    },
+    {
+      "step": "consume replay (must be rejected)",
+      "tx_hash": "0x97fe37268c4910e705d2b7a068b09b114aaf17616321f7fa88c2291c6b18f58c",
+      "status": "FINALIZED",
+      "rejected": true
+    }
+  ]
+}

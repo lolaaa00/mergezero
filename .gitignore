@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+artifacts/
+*.pyc
+.DS_Store
+
+# Internal working prompt, not part of the submitted primitive.
+CLAUDE_HANDOFF.md

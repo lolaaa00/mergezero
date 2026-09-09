@@ -1,0 +1,13 @@
+networks:
+  default: studionet
+
+  studionet:
+    # Stable hosted GenLayer Studio. Chain ID: 61999.
+    # Do NOT replace this with studio_devnet / studio-dev (chain 61997).
+    leader_only: false
+
+paths:
+  contracts: contracts
+  artifacts: artifacts
+
+environment: .env

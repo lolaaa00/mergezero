@@ -1,0 +1,4 @@
+# Deployment and validation dependencies.
+# Pulls in genlayer-py, which is what scripts/deploy_studionet.py and the live
+# Studionet suite use. Verified against genlayer-py 0.16.3.
+genlayer-test @ git+https://github.com/genlayerlabs/genlayer-testing-suite@v0.29.2
