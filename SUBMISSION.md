@@ -190,6 +190,8 @@ python3 scripts/verify_deployment.py 0x788Ab128cFddA3b742606d00D1E23f3fa4819831 
 | Pinned runner | `py-genlayer:1jb45aa8ynh2a9c9xn3b7qqh8sm5q93hwfp7jqmwsfhh8jpz09h6` (resolves in genvm `v0.2.16`) |
 | Toolchain | `genlayer-test` 0.29.2, `genlayer-py` 0.16.3, pytest 9.1.1 |
 | Source verification | both deployed contracts are byte-identical to this repository (see §4 and §6) |
+| Source commit | `9779d0e214aa2abe251f428377d5edd4738f2b61` — the commit whose contracts were deployed and tested. Any later commit on `main` changes documentation only; the contract hashes above are the authoritative link between this repository and chain 61999. |
+| Contract SHA-256 | `mergezero.py` `27cddf71c5d2509eab67bdfc35287fd006f6b0a79c219f35b12c23e706e17658`<br>`mergezero_gate.py` `5326f16d693b93358e9c6f88017101197813cec0566ee2b59d11af8d8680e881` |
 
 `genvm-lint` was **not** run: the upstream GenVM releases publish no linter
 build for this platform (macOS x86_64). `scripts/preflight.py` covers the same
