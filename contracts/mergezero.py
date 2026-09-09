@@ -565,15 +565,15 @@ class MergeZero(gl.Contract):
 
         prompt = semantic_prompt(scope, base_json, payload_a, payload_b)
 
-        def classify_once() -> dict:
+        # gl.nondet.exec_prompt is placed directly inside leader_fn and
+        # validator_fn so that the GenVM equivalence-principle linter can
+        # statically confirm reachability from both execution paths.
+        def leader_fn() -> dict:
             try:
                 raw = gl.nondet.exec_prompt(prompt, response_format="json")
                 return parse_semantic_result(raw)
             except Exception:
                 return {"verdict": "AMBIGUOUS", "reason": "semantic classification failed"}
-
-        def leader_fn() -> dict:
-            return classify_once()
 
         def validator_fn(leader_result) -> bool:
             if not isinstance(leader_result, gl.vm.Return):
@@ -583,7 +583,8 @@ class MergeZero(gl.Contract):
                 return False
             try:
                 leader = parse_semantic_result(candidate)
-                own = classify_once()
+                raw = gl.nondet.exec_prompt(prompt, response_format="json")
+                own = parse_semantic_result(raw)
             except Exception:
                 return False
             # Reasons are diagnostic. The consensus-critical dimension is the

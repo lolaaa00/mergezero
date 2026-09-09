@@ -1,32 +1,32 @@
 {
-  "mergezero_address": "0x1FC99a00650a98e0339346506760C5F10931BBAa",
+  "mergezero_address": "0x3fc70fAe5fd3837Aa69F24fc07d2828A8b15EEc0",
   "merge_id": 2,
-  "gate_address": "0x788Ab128cFddA3b742606d00D1E23f3fa4819831",
-  "workspace_hash": "9412871f9d680fba0b890b5ba9016120a11f7e2463451d37145368cd2bcdc4f9",
+  "gate_address": "0x8B0d899b2e817C271F3ad2b1f106D01AF648b5e0",
+  "workspace_hash": "cbe631e7f4a88af82641760d8fc3ca7579ef25bcf746f77e33876c61ab8641da",
   "merged_state_hash": "e8294265ef15dca31aed071b3a7d71e68ca8fbe170f5c9860a8cba5bff90f9fb",
   "steps": [
     {
       "step": "deploy MergeZeroGate",
-      "tx_hash": "0x3f7f0cbb8b3eabef58ac3972be2895186e6191bf8fb1f8174b965a97e639351b",
+      "tx_hash": "0x182ee9846c511e25467aef3b6cb1f01faba3b5551357fdbb98833376bfbb5ea8",
       "status": "FINALIZED",
       "result": "MAJORITY_AGREE",
-      "address": "0x788Ab128cFddA3b742606d00D1E23f3fa4819831"
+      "address": "0x8B0d899b2e817C271F3ad2b1f106D01AF648b5e0"
     },
     {
       "step": "consume with wrong state hash (must be refused)",
-      "tx_hash": "0xfc6358afcca081ef6010cfdbeb8efc48397444ba9f580d495e7928cc51f24277",
+      "tx_hash": "0x71a808695877da29dade6bd6ad316a16d3c7d4890863ca7f0357a9404f3d8471",
       "status": "FINALIZED",
       "rejected": true
     },
     {
       "step": "consume with correct pins",
-      "tx_hash": "0x002a992d1d40c41f67beef2401f0b9750d00ab205d73b864de973319391ae9e8",
+      "tx_hash": "0x47809fbfa5dabc6fccff5a2d3f85d1634545e10e49d6c018093d59fb26643cc3",
       "status": "FINALIZED",
       "result": "MAJORITY_AGREE"
     },
     {
       "step": "consume replay (must be rejected)",
-      "tx_hash": "0x97fe37268c4910e705d2b7a068b09b114aaf17616321f7fa88c2291c6b18f58c",
+      "tx_hash": "0x24503d07276b0fda8a3ecc75705a6ffd1fac6454d5c30fa1fe223111f17febb8",
       "status": "FINALIZED",
       "rejected": true
     }

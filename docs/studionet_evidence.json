@@ -1,11 +1,11 @@
 [
   {
     "note": "account",
-    "value": "0xf1914Da7d1852000ed83035ee78C3054f3245087"
+    "value": "0xfF9055dc41Ca85DeE747C8E6d1cDD2CCee528828"
   },
   {
     "step": "deploy MergeZero",
-    "tx_hash": "0xeadaf42ba7b72185505ea8dee3927da1f7d387ee8183371f85d01e23b88be03b",
+    "tx_hash": "0x582703a28889463d1c8ba99ba4e4118903036264c95445b5a82ad00c9b122690",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -14,11 +14,11 @@
   },
   {
     "note": "mergezero_address",
-    "value": "0x1FC99a00650a98e0339346506760C5F10931BBAa"
+    "value": "0x3fc70fAe5fd3837Aa69F24fc07d2828A8b15EEc0"
   },
   {
     "step": "create_workspace",
-    "tx_hash": "0xe31cdffc0a6032de75497e6e99dbccabf0bce96bcd6fa50a957160181a5159fc",
+    "tx_hash": "0x48eaa05008dec1db09b447387105282e68c3549f9d0dc4543dc554b42c736050",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -27,11 +27,11 @@
   },
   {
     "note": "workspace_definition_hash",
-    "value": "9412871f9d680fba0b890b5ba9016120a11f7e2463451d37145368cd2bcdc4f9"
+    "value": "cbe631e7f4a88af82641760d8fc3ca7579ef25bcf746f77e33876c61ab8641da"
   },
   {
     "step": "conflict A: open_patch",
-    "tx_hash": "0x10d9c84025ba39b2b343ac0430ef47ec38511ebb8dcc34b6266a151e49f9118a",
+    "tx_hash": "0x85c76bf3fbbb6460d425bb77f4a528c4b69c1b4751cd9e5dcfe73e57a83aca86",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -40,7 +40,7 @@
   },
   {
     "step": "conflict A: add_set_operation",
-    "tx_hash": "0x3388aef3c44318c15378b386919902efb2257415851604ff24753df0a41cc50d",
+    "tx_hash": "0xae81c4b41afa0db6cbb565a94fc434a5abb9d08c0a81d2095a6a94f5892f3ac3",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -49,7 +49,7 @@
   },
   {
     "step": "conflict A: seal_patch",
-    "tx_hash": "0x5796dd05251f7d8e7857982595b9473336db84cdbb5ff15b411c1603d28cc029",
+    "tx_hash": "0xfae912c83352ae36aa8e3f4b23e5278b1c45b9d33cb0dddcc6d08f62fce4663d",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -58,7 +58,7 @@
   },
   {
     "step": "conflict B: open_patch",
-    "tx_hash": "0x8948adac5df58bb67b86185a8f02eaa97151fdb29abca8500d7443ed519ee92d",
+    "tx_hash": "0x132eb312b640047f20bcd060c024121c1095c5e07a1b24f9d58bd970f8007914",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -67,7 +67,7 @@
   },
   {
     "step": "conflict B: add_set_operation",
-    "tx_hash": "0xf01bcc4701063020c5b7881e5dbb1d35e1ebe08cb7d7c5a833d1895ac735074c",
+    "tx_hash": "0x772032dd82f3f4d25526cc1de8ae3ea68d7b2b3beed88cc79affa06dc5045a59",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -76,7 +76,7 @@
   },
   {
     "step": "conflict B: seal_patch",
-    "tx_hash": "0xb12eebc1a1baffed7c1c7900355a69e9a533e4cf5bba8fc471320613e26e8453",
+    "tx_hash": "0x72aa958948dc281d923ab11e203665db1526925e4b575fcf83f67af498c530e4",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -85,7 +85,7 @@
   },
   {
     "step": "merge_patches (semantic conflict pair)",
-    "tx_hash": "0x7b8807a14cb400a8436e04b0637ceb6b8cc4e736e859ce5d0a64e91773a495f1",
+    "tx_hash": "0x7e96271bb4d8d85c60c06df154e2627e00edd1aa8137ac416839ec0d7169039f",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -96,16 +96,16 @@
     "note": "conflict_receipt",
     "value": {
       "base_version_id": 1,
-      "created_at": "2026-09-09T00:58:07.353303Z",
+      "created_at": "2026-09-09T11:53:29.165069Z",
       "id": 1,
       "merged_state_hash": "",
       "merged_version_id": 0,
       "pair_hash": "7a65ad0eb3af30ecd8332e005978dee0f01732b8204cd104efed0bb0f7857fdf",
       "patch_a": 1,
       "patch_b": 2,
-      "reason": "Patch A disables password authentication for ordinary access, while Patch B explicitly depends on password recovery as the ordinary recovery mechanism. If password authentication is disabled, password recovery as the sole recovery mechanism becomes incoherent or unsafe, as users would have no way to authenticate via passwords to recover access. The two intents are semantically contradictory in the context of the workspace scope requiring coherent authentication and recovery policies.",
-      "requester": "0xf1914Da7d1852000ed83035ee78C3054f3245087",
-      "resolved_at": "2026-09-09T00:58:07.353303Z",
+      "reason": "Patch A disables password authentication for ordinary access, while Patch B explicitly relies on password recovery as the required ordinary recovery mechanism. These intents are semantically contradictory: disabling password authentication undermines the ability to use password recovery, making Patch B's intent unsafe and incoherent under the workspace scope's requirement for coherent authentication and recovery policies.",
+      "requester": "0xfF9055dc41Ca85DeE747C8E6d1cDD2CCee528828",
+      "resolved_at": "2026-09-09T11:53:29.165069Z",
       "status": 3,
       "status_name": "SEMANTIC_CONFLICT",
       "version_a": 2,
@@ -115,7 +115,7 @@
   },
   {
     "step": "commute C: open_patch",
-    "tx_hash": "0xd2eb1d6a2213f3c02b9cab26caf0aad072f4820b828ac0ee41f90e78abdf935a",
+    "tx_hash": "0x74097e03f2908974ecdc8a2ff160dd8609d45b22a8c31c401a87a59c3507332c",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -124,7 +124,7 @@
   },
   {
     "step": "commute C: add_set_operation",
-    "tx_hash": "0xb11d3289e8cf3f26120974ea8542cfb71a4a9eea7ae8899d56f4d5327f1ff88c",
+    "tx_hash": "0x19d6a8259d6fab84357fda19e2e41486ccacebc08f031ed94aa5b19216fa68c0",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -133,7 +133,7 @@
   },
   {
     "step": "commute C: seal_patch",
-    "tx_hash": "0x0c5a24b7104663f9ea29e63eff9abc5a5a17fe624f3e73be7d4ee32fc341e1dd",
+    "tx_hash": "0x6b29f2942d3ed6f18a21948ffabe8169d7a49a93c0fd1398ed6fcfc7ae3281fc",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -142,7 +142,7 @@
   },
   {
     "step": "commute D: open_patch",
-    "tx_hash": "0x5c278fcaa2c523c4ff22dab2e9d41d524f6da00c96ad493c196b524ae831a0c1",
+    "tx_hash": "0x2ac7ab4193651282c56ffff4f262f37bc20f2291229145a68b6c0d614488c12e",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -151,7 +151,7 @@
   },
   {
     "step": "commute D: add_set_operation",
-    "tx_hash": "0xa52f91caf9aa7993c188e511cf6da7d8e476faff181a18eef693526f732c78c3",
+    "tx_hash": "0xc2420f185ca31ce0df2ca51d14753437ca64fbb0950c7da02251c337474156fc",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -160,7 +160,7 @@
   },
   {
     "step": "commute D: seal_patch",
-    "tx_hash": "0xe450782c7804bfa2a6cd05fec9e48a9f5628cd105a55aced3b7d76a441883d66",
+    "tx_hash": "0xf5db176b4fb544ec4f53963a1dbab7afde787a564f767a657f859cc45d83c037",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -169,7 +169,7 @@
   },
   {
     "step": "merge_patches (commuting pair)",
-    "tx_hash": "0x1b04f17a612702297fa46ea9f7c08a7b7c0726e79ac23ea13baf529eed42cf0c",
+    "tx_hash": "0x0d3a6e8b3f8934d384ef9b1dbadaa8b9859f48b97ccb571eafe3e7a7fe4cbf4a",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
@@ -180,16 +180,16 @@
     "note": "commute_receipt",
     "value": {
       "base_version_id": 1,
-      "created_at": "2026-09-09T01:13:05.408830Z",
+      "created_at": "2026-09-09T11:58:47.068882Z",
       "id": 2,
       "merged_state_hash": "e8294265ef15dca31aed071b3a7d71e68ca8fbe170f5c9860a8cba5bff90f9fb",
       "merged_version_id": 6,
       "pair_hash": "ef527a7051f7a5d8b9362816cc0575344ee38844bedf14390afeb7b3ec8f3406",
       "patch_a": 3,
       "patch_b": 4,
-      "reason": "PATCH_A edits /notifications/email; PATCH_B edits /limits/daily; both paths are structurally disjoint and the workspace scope explicitly states notifications and limits evolve independently, so no semantic interaction exists.",
-      "requester": "0xf1914Da7d1852000ed83035ee78C3054f3245087",
-      "resolved_at": "2026-09-09T01:13:05.408830Z",
+      "reason": "Patch A updates the notification email and Patch B raises the daily request limit; per the workspace scope these domains are unrelated and can evolve independently, so neither defeats nor contradicts the other's intent.",
+      "requester": "0xfF9055dc41Ca85DeE747C8E6d1cDD2CCee528828",
+      "resolved_at": "2026-09-09T11:58:47.068882Z",
       "status": 1,
       "status_name": "COMMUTE",
       "version_a": 4,
@@ -211,11 +211,39 @@
   },
   {
     "step": "merge_patches (reversed order, must reuse receipt)",
-    "tx_hash": "0x3fab7a2397ecda51e75cf0c8146b11d88d96322e4df15cc3f943c88be82582ee",
+    "tx_hash": "0xe16eaf1b5cef219d370658decde400dea0bde7c9abcd9fe7cf7e64940f9c5089",
     "status": "FINALIZED",
     "result": "MAJORITY_AGREE",
     "rounds": "1",
     "leader_only": "False",
     "validator_votes": 5
+  },
+  {
+    "step": "deploy MergeZeroGate",
+    "tx_hash": "0x97bc7ae74d6ebcb96d0f4d374b8f76f4f137e76ddd2a6dbbe0b45af30f9a7abb",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "rounds": "1",
+    "leader_only": "False",
+    "validator_votes": 5
+  },
+  {
+    "note": "gate_address",
+    "value": "0x512dDaDC47803a7F010B272A19b1739eB37e0C3d"
+  },
+  {
+    "step": "gate consume (valid receipt)",
+    "tx_hash": "0xa69bd897d5447a06c33e2ef6caec27e0db360502b12e9f00c799b00174d45c28",
+    "status": "FINALIZED",
+    "result": "MAJORITY_AGREE",
+    "rounds": "1",
+    "leader_only": "False",
+    "validator_votes": 5
+  },
+  {
+    "step": "gate consume (replay, must be rejected)",
+    "tx_hash": "0x04dcdf73c013b61592f066180c6234a1ae8ab131f0f23bb06c1eacba940c6faa",
+    "status": "FINALIZED",
+    "rejected": true
   }
 ]
